@@ -3,6 +3,7 @@ siteMetadata: {
     title: 'Gatsby Default Starter',
 },
 plugins: [
+  'gatsby-plugin-netlify-cms',
   {
     resolve: `gatsby-plugin-typography`,
     options: {
