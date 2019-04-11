@@ -24,6 +24,7 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
+    "eslint-config-react-app": "^3.0.8",
     "prettier": "^1.16.4"
   },
   "repository": {
