@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 const FrameBox = styled.div`
+  width: 80%;
   max-width: 832px;
   border-radius: 15px;
   margin: 0px auto;
@@ -9,11 +10,20 @@ const FrameBox = styled.div`
 `
 
 const ContentBox = styled.div`
+  width: 80%;
   max-width: 650px;
   min-height: 70vh;
   margin: 3em auto;
-  border: 1px solid red;
+`
 
+const BottomPoint = styled.div`
+  background-color: black;
+  height: 8px;
+  width: 8px;
+  margin: 0 auto;
+  border-radius: 50px;
+  position: relative;
+  top: -1.5em;
 `
 
 export default ({ children }) => (
@@ -21,5 +31,6 @@ export default ({ children }) => (
     <ContentBox>
       {children}
     </ContentBox>
+    <BottomPoint />
   </FrameBox>
 )
