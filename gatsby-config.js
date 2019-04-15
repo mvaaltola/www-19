@@ -3,6 +3,7 @@ module.exports = {
     title: "Gatsby Default Starter",
   },
   plugins: [
+    "gatsby-plugin-react-helmet",
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-styled-components",
     {
