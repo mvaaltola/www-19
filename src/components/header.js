@@ -5,9 +5,10 @@ import { Helmet } from "react-helmet"
 
 const Header = styled.div`
   font-family: "Oxygen";
+  width: 80%;
   max-width: 792px;
-  margin: 1.5em auto;
-  padding: 0 1rem;
+  margin: 1.2em auto;
+  padding: 0 0.5em;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
