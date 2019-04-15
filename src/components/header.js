@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import { Helmet } from "react-helmet"
 
 const Header = styled.div`
   font-family: "Oxygen";
   max-width: 792px;
-  margin: 3rem auto;
+  margin: 1.5em auto;
   padding: 0 1rem;
-  border: 2px solid red;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -17,13 +17,11 @@ const Logo = styled(Link)`
   font-size: 36px;
   color: inherit;
   text-decoration: none;
-  border: 1px solid black;
   text-align: left;
   flex-grow: 1
 `
 
 const NavList = styled.div`
-  border: 3px solid green;
   list-style-type: none;
   flex-grow: 6;
   margin: 0;
@@ -34,16 +32,20 @@ const NavList = styled.div`
   justify-content: flex-end;
 `
 const NavItem = styled(Link)`
+  font-family: "Oxygen";
   color: inherit;
   text-decoration: none;
-  border: 1px solid black;
-  width: 80px;
+  width: 100px;
   text-align: center;
   font-size: 24px;
 `
 
 export default () => (
   <Header>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>vaalto.la</title>
+    </Helmet>
     <Logo to="/">vaalto.la_</Logo>
     <NavList>
       <NavItem to="/work/" activeStyle={{ textDecoration: "underline" }}>work</NavItem>
