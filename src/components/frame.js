@@ -5,8 +5,9 @@ const FrameBox = styled.div`
   width: 80%;
   max-width: 832px;
   border-radius: 15px;
-  margin: 0px auto;
+  margin: 0px auto 50px auto;
   border: 2px solid black;
+  background-color: white;
 `
 
 const ContentBox = styled.div`
